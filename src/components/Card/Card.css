@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    margin: 30px;
+    padding: 5px;
+    background-color:aquamarine;
+    border: 1px solid #056779;
+    box-shadow: 7px 7px 1px #056779;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#id {
+    padding: 5px;
+}
+
+#name {
+    padding: 5px;
+}
+
+#location {
+    padding: 5px;
+}
+
+#vid {
+    padding: 5px;
+}
+
+#ipAdd {
+    padding: 5px;
+}
+
+#mask {
+    padding: 5px;
+}
+
+#prov {
+    padding: 5px;
+}
+
+#info {
+    padding: 5px;
+}

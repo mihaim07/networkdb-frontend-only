@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Indie_Flower";
+    src: url("./Indie_Flower/IndieFlower-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Indie_Flower", Courier;
+    font-size: 3em;
+    color:aquamarine;
+}
