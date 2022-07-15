@@ -6,6 +6,7 @@ export const database = [
       vid: 100,
       ipAdd: '192.168.100.1',
       mask: '255.255.255.252',
+      prov: 'AAA',
       info: 'Sincere@april.biz'
     },
     {
@@ -15,15 +16,17 @@ export const database = [
       vid: 200,
       ipAdd: '192.168.200.1',
       mask: '255.255.255.252',
+      prov: 'AAA',
       info: 'Shanna@melissa.tv'
     },
     {
       id: 3,
       name: 'ABC',
       location: 'Topoloveni',
-      vid: 150
+      vid: 150,
       ipAdd: '192.168.150.1',
       mask: '255.255.255.252',
+      prov: 'AAA',
       info: 'Nathan@yesenia.net'
     },
     {
@@ -33,6 +36,7 @@ export const database = [
       vid: 102,
       ipAdd: '172.16.102.1',
       mask: '255.255.255.240',
+      prov: 'AAD',
       info: 'Julianne.OConner@kory.org'
     },
     {
@@ -42,6 +46,7 @@ export const database = [
       vid: 101,
       ipAdd: '10.10.101.1',
       mask: '255.255.255.252',
+      prov: 'AAB',
       info: 'Lucio_Hettinger@annie.ca'
     },
     {
@@ -51,6 +56,7 @@ export const database = [
       vid: 201,
       ipAdd: '10.10.201.1',
       mask: '255.255.255.252',
+      prov: 'AAC',
       info: 'Karley_Dach@jasper.info'
     },
     {
@@ -60,6 +66,7 @@ export const database = [
       vid: 103,
       ipAdd: '192.168.103.1',
       mask: '255.255.255.252',
+      prov: 'AAC',
       info: 'Telly.Hoeger@billy.biz'
     },
     {
@@ -69,6 +76,7 @@ export const database = [
       vid: 200,
       ipAdd: '192.168.200.1',
       mask: '255.255.255.252',
+      prov: 'AAB',
       info: 'Sherwood@rosamond.me'
     },
     {
@@ -78,6 +86,7 @@ export const database = [
       vid: 151,
       ipAdd: '192.168.151.1',
       mask: '255.255.255.252',
+      prov: 'AAA',
       info: 'Chaim_McDermott@dana.io'
     },
     {
@@ -87,6 +96,7 @@ export const database = [
       vid: 250,
       ipAdd: '192.168.250.1',
       mask: '255.255.255.252',
+      prov: 'AAA',
       info: 'Rey.Padberg@karina.biz'
     }
   ];
