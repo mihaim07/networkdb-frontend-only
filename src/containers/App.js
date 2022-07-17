@@ -4,6 +4,7 @@ import CardList from '../components/CardList/CardList';
 import SearchBox from '../components/SearchBox/SearchBox';
 // import Scroll from './components/Scroll';
 import './App.css';
+
 import { database } from '../database.js';
 
 
@@ -16,7 +17,7 @@ class App extends Component {
         <SearchBox />
         {/* <Filters />
         <Scroll>  */}
-          <CardList database={database}/>
+        <CardList database={database}/>
         {/* </Scroll>   */}
       </div>
     );
