@@ -1,17 +1,31 @@
 import React from 'react';
 import Card from '../Card/Card';
-import {database} from '../../database';
+// import { database } from '../../database';
 
 
 const CardList = ({database}) => {
-    const card = database.map((item, i) => {
-        return <Card  id={database.id[i]} name={database.name[i]} location={database.location[i]} vid={database.id[i]} vid={database.id[i]} ipAdd={database.ipAdd[i]} mask={database.mask[i]} prov={database.prov[i]} />
-    });
-        return (
-            <div>
-                {card}
-            </div>
-        );
+    console.log(database);
+    return (
+        <div>
+            {
+                database.map((item, i) => {
+                    return (
+                        <Card
+                            key={i}
+                            id={database[i].id} 
+                            name={database[i].name} 
+                            location={database[i].location}
+                            vid={database[i].id} 
+                            ipAdd={database[i].ipAdd} 
+                            mask={database[i].mask} 
+                            prov={database[i].prov}
+                            info={database[i].info}
+                            />
+                    );
+                })
+            }
+        </div>
+    );
 }
 
 export default CardList;

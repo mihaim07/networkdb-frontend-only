@@ -1,11 +1,11 @@
 import React from "react";
-import './Card.css';
+import './SearchBox.css';
 
 
 
-const Card = ({ id, name, location, vid, ipAdd, mask, prov, info }) => {
+const SearchBox = ({ id, name, location, vid, ipAdd, mask, prov, info }) => {
     return (
-        <div className='card'>
+        <div className='SearchBox'>
             <h2 id="id">{id}</h2>
             <h2 id="name">{name}</h2>
             <h2 id="location">{location}</h2>
@@ -18,4 +18,4 @@ const Card = ({ id, name, location, vid, ipAdd, mask, prov, info }) => {
     );
 }
 
-export default Card;
+export default SearchBox;
