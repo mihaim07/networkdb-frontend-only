@@ -6,7 +6,7 @@ import './SearchBox.css';
 const SearchBox = () => {
     return (
         <div className='searchBox'>
-            <input type={'text'} placeholder={'bla bla bla'} />
+            <input className="input" type={'text'} placeholder={'Search...'} />
         </div>
     );
 }

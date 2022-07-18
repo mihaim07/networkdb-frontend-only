@@ -1,4 +1,5 @@
 .cardList {
     display: block;
     margin: auto auto;
+    /* overflow: hidden; */
 }

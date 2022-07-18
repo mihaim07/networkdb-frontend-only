@@ -2,46 +2,73 @@
     display: flex;
     align-items: center;
     justify-content: left;
+    /* width: 70%; */
+    height: 70px;
+    margin: 0px auto;
+    padding: 0px;
+    background-color:aquamarine;
+    border-radius: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+}
+
+.full-card {
+    overflow: hidden;
     width: 70%;
-    height: 3%;
+    height: 70px;
     margin: 10px auto;
     padding: 0px;
     background-color:aquamarine;
     border: 1px solid #056779;
     border-radius: 5px;
-    box-shadow: 7px 7px 1px #056779;
     text-align: center;
     font-family: sans-serif;
+    transition: all .2s ease-in-out;
+}
+
+.toggleBoxShadowON {
+    box-shadow: 7px 7px 1px #056779;
+    height: 150px;
+}
+
+.toggleBoxShadowOFF {
+    box-shadow: 37px 37px 11px #056779;
+}
+
+.full-card:hover {
+    transform: scale(1.05);
 }
 
 #id {
-    padding: 3px;
+    padding: 10px;
 }
 
 #name {
-    padding: 3px;
+    padding: 10px;
 }
 
 #location {
-    padding: 3px;
+    padding: 10px;
 }
 
 #vid {
-    padding: 3px;
+    padding: 10px;
 }
 
 #ipAdd {
-    padding: 3px;
+    padding: 10px;
 }
 
 #mask {
-    padding: 3px;
+    padding: 10px;
 }
 
 #prov {
-    padding: 3px;
+    padding: 10px;
 }
 
 #info {
-    padding: 3px;
+    padding: 0px 5px;
 }
