@@ -4,17 +4,13 @@ import './Card.css';
 let isActive = true;
 
 const extendProperty = event => {
-    console.log(event);
     if(isActive) {
         event.currentTarget.classList.add('toggleBoxShadowON');
-        console.log('off');
     }
     else {
         event.currentTarget.classList.remove('toggleBoxShadowON');
-        console.log('on');
     }
     isActive = !isActive;
-    console.log(isActive);
 }
 
 

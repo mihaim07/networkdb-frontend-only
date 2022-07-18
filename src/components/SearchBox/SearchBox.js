@@ -3,10 +3,11 @@ import './SearchBox.css';
 
 
 
-const SearchBox = () => {
+const SearchBox = ({ searchChange }) => {
+   
     return (
         <div className='searchBox'>
-            <input className="input" type={'text'} placeholder={'Search...'} />
+            <input className="input" type={'text'} placeholder={'Search...'} onChange={searchChange}/>
         </div>
     );
 }

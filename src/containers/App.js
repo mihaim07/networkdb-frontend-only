@@ -4,20 +4,36 @@ import CardList from '../components/CardList/CardList';
 import SearchBox from '../components/SearchBox/SearchBox';
 import Scroll from '../components/Scroll/Scroll';
 import './App.css';
-
 import { database } from '../database.js';
 
 
 
 class App extends Component {
+constructor() {
+  super()
+  this.state = {
+    database: database,
+    searchfield: ''
+  }
+}
+
+onSearchChange = (event) => {
+  this.setState({ searchfield: event.target.value });
+}
+
+
   render() {
+    const { database, searchfield } = this.state;
+    const filteredDatabase = database.filter(data =>{
+      return ((data.name.toLowerCase()).concat([' '] , data.location.toLowerCase())).includes(searchfield.toLowerCase());
+    })
     return (
       <div className="App">
         <Logo />
-        <SearchBox />
+        <SearchBox searchChange={ this.onSearchChange } />
         {/* <Filters /> */}
         <Scroll> 
-          <CardList database={database}/>
+          <CardList database={filteredDatabase}/>
         </Scroll>  
       </div>
     );
