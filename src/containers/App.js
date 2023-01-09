@@ -4,7 +4,7 @@ import CardList from '../components/CardList/CardList';
 import SearchBox from '../components/SearchBox/SearchBox';
 import Scroll from '../components/Scroll/Scroll';
 import './App.css';
-import { database } from '../database.js';
+import { database } from '../database2.js';
 
 
 
@@ -25,7 +25,7 @@ onSearchChange = (event) => {
   render() {
     const { database, searchfield } = this.state;
     const filteredDatabase = database.filter(data =>{
-      return ((data.name.toLowerCase()).concat([' '] , data.location.toLowerCase())).includes(searchfield.toLowerCase());
+      return ((data.NodeName.toLowerCase()).concat([' '] , data.NodeName.toLowerCase())).includes(searchfield.toLowerCase());
     })
     return (
       <div className="App">

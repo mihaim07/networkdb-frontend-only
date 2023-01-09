@@ -14,19 +14,17 @@ const extendProperty = event => {
 }
 
 
-const Card = ({ id, name, location, vid, ipAdd, mask, prov, info }) => {
+const Card = ({ ipLoopback, nodeName, address, city, comments, contact, invId, latitude, longitude, productType, responsibility, project, prov1, ipAdd1, vid1, prov2, ipAdd2, vid2 }) => {
     return (
         <div className='full-card' onClick={extendProperty}>
             <div className='card'>
-                <h2 id="id">{id}</h2>
-                <h2 id="name">{name}</h2>
-                <h2 id="location">{location}</h2>
-                <h2 id="vid">{`Vid: ${vid}`}</h2>
-                <h2 id="ipAdd">{`IP: ${ipAdd}`}</h2>
-                <h2 id="mask">{`Mask: ${mask}`}</h2>
-                <h2 id="prov">{`Prov: ${prov}`}</h2>
+                <h3 id="name">{nodeName}</h3>
+                <h3 id="location">{address}</h3>
+                <h3 id="vid">{`Vid1: ${vid1}`}</h3>
+                <h3 id="ipAdd">{`IP1: ${ipAdd1}`}</h3>
+                <h3 id="prov">{`Prov1: ${prov1}`}</h3>
             </div>
-            <h2 id="info">{`Info: ${info}`}</h2>
+            <h3 id="info">{`Info: ${comments}`}</h3>
         </div>
     );
 }
